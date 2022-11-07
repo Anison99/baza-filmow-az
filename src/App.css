@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-roboto: "Roboto Slab", serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-roboto);
+    background-color: #FFFFFF;
+}
+
+/*
+.app {
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 0.9px;
+    background: transparent;
+    background-clip: text;
+    position: absolute;
+    width: 251px;
+    height: 55px;
+    left: 288px;
+    top: 5px;
+    color: #FFFFFF;
+}
+
+.banner-top {
+    position: absolute;
+    width: 1500px;
+    height: 69px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, #164D2C 45.07%, rgba(22, 77, 44, 0) 80.14%), #2AAC5E;
+}
+
+
+
+button {
+    position: absolute;
+    width: 144px;
+    height: 55px;
+    left: 1222px;
+    top: 7px;
+    background: #2AAC5E;
+    border-radius: 12px;
+    text-align: center;
+    font-family: var(--font-roboto);
+    color: white;
+    font-size:25px;
+}
+
+.search {
+    position: absolute;
+    width: 597px;
+    height: 55px;
+    left: 570px;
+    top: 7px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+    .search input {
+        flex: 1;
+        border: none;
+        font-size: 1.5rem;
+        font-family: var(--font-raleway);
+        font-weight: 500;
+        padding-right: 1rem;
+        outline: none;
+        color: #174D2C;
+        background: transparent;
+        text-align:left;
+    }
+
+search-button {
+        position: absolute;
+        width: 185px;
+        height: 55px;
+        left: 982px;
+        top: 7px;
+        background: #2AAC5E;
+        border-radius: 12px;
+    }
+    */
+
+
