@@ -1,0 +1,17 @@
+.center{
+    display: block;
+    margin-left: 40%;
+    margin-right:60%;
+    top:15%;
+    
+}
+
+.head-text{
+    position: relative;
+}
+.text-on-image{
+    position:absolute;
+    right:43%;
+    left:52%;
+    top:5%;
+}
