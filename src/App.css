@@ -14,9 +14,14 @@
 }
 
 
-body {
+.body {
     font-family: var(--font-roboto);
     background-color: #FFFFFF;
+}
+
+.logo-image {
+    
+   
 }
 
 /*
