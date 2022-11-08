@@ -12,11 +12,8 @@ const Banner = () => {
                 <div className="text-on-image">
                     <h1>FILM BASE</h1>
                 </div>
-            </div>
-               
+            </div>      
         </header>
-        
-        
         );
 }
 

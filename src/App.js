@@ -11,9 +11,6 @@ const App = () => {
         <div className="body">
             <Navbar /> 
             <Banner />
-
-            
-  
         </div>   
     );
 }
