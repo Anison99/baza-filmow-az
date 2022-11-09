@@ -23,3 +23,28 @@ h1 {
     font-size: 50px;
     color: #174D2C;
 }
+h2 {
+    font-size: 30px;
+    color: #174D2C;
+}
+
+.movie {
+    width: 290px;
+    height: 460px;
+    margin: 1.5rem;
+    border-radius: 12px;
+    border: none;
+    fill: #198754;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.distance{
+    margin-right: 50px;
+}
+.center-movies {
+    display: block;
+    margin-left: 50%;
+    margin-right: 60%;
+    top: 15%;
+}
