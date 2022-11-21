@@ -27,6 +27,11 @@ h2 {
     font-size: 30px;
     color: #174D2C;
 }
+h3 {
+    font-size: 5px;
+    color: grey;
+    text-align: center;
+}
 
 .movie {
     width: 290px;
@@ -47,4 +52,7 @@ h2 {
     margin-left: 50%;
     margin-right: 60%;
     top: 15%;
+}
+.footage-style{
+    
 }
