@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import './Banner.css';
-import Navbar from './Navbar';
-import Banner from './Banner';
+import './components/Banner.css';
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 import Shrek1 from './movie-images/shrek-1.jpg'
 import Shining from './movie-images/shining.png'
 import Alien from './movie-images/obcy.png'
