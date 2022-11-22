@@ -3,10 +3,6 @@
 ## 1. Aktualna wersja
 Najbardziej aktualna wersja znajduje siê w ga³êzi "develop"
 
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

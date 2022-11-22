@@ -1,10 +1,19 @@
-import React from 'react';
+﻿import React from 'react';
 import Logo from './logo-film.png';
 import './Navbar.css';
+import Login from './Login';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const navigateToLogin = () => {
+        // do zakładki login
+        navigate('/Login');
+    };
+    
     return (
         <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-success shadow-sm">
             <div class="container">
@@ -28,10 +37,11 @@ const Navbar = () => {
             </div>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-outline-light" type="button">Zaloguj</button>
+                <button class="btn btn-outline-light" type="button" onClick={navigateToLogin}>Zaloguj</button>
                 <button class=" btn btn-light" type="button">Zarejestruj</button>
             </div>
+            
         </nav>
         );
 }
-export default Navbar
+export default Navbar;
