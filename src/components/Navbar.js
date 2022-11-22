@@ -2,6 +2,7 @@
 import Logo from './logo-film.png';
 import './Navbar.css';
 import Login from './Login';
+import App from '../App'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -22,7 +23,7 @@ const Navbar = () => {
 
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="#" class="nav-link">HOME <span class="sr-only">(obecna)</span></a></li>
+                        <li class="nav-item active"><a href="#" class="nav-link">HOME <span class="sr-only"></span></a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Dodaj film</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Filtruj</a></li>
                     </ul>

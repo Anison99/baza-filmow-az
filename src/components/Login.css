@@ -1,0 +1,9 @@
+.form-styled {
+    display: block;
+    margin-left: 40%;
+    margin-right: 60%;
+    width: 20%;
+}
+.login-title{
+    font-size:40px;
+}
