@@ -1,10 +1,11 @@
 ﻿import React from 'react';
 import Logo from './logo-film.png';
 import './Navbar.css';
+import '../App.css'
 import Login from './Login';
 import App from '../App'
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -23,7 +24,11 @@ const Navbar = () => {
 
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="#" class="nav-link">HOME <span class="sr-only"></span></a></li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">
+                                <Link to="/" component={App} style={{ textDecoration: 'none', color: 'white' }}>HOME</Link>
+                            </a>
+                        </li>
                         <li class="nav-item"><a href="#" class="nav-link">Dodaj film</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Filtruj</a></li>
                     </ul>

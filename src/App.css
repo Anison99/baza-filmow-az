@@ -14,7 +14,7 @@
 }
 
 
-.body {
+.body{
     font-family: var(--font-roboto);
     background-color: #FFFFFF;
 }
@@ -32,6 +32,7 @@ h3 {
     color: grey;
     text-align: center;
 }
+
 
 .movie {
     width: 290px;
