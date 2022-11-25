@@ -7,7 +7,6 @@ import Navbar from './Navbar';
 import Form from 'react-bootstrap/Form';
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MDBContainer, MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane, MDBBtn, MDBIcon, MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
 
 const Register = () => {
     return (
@@ -42,8 +41,6 @@ const Register = () => {
                 </Form>
             </div>
         </div>
-
-
     );
 }
 
