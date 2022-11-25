@@ -1,9 +1,11 @@
 ﻿import React from 'react';
 import Logo from './logo-film.png';
+
 import './Navbar.css';
 import '../App.css'
-import Login from './Login';
+
 import App from '../App'
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, useNavigate, Link } from "react-router-dom";
 
@@ -14,6 +16,9 @@ const Navbar = () => {
     const navigateToLogin = () => {
         // do zakładki login
         navigate('/Login');
+    };
+    const navigateToRegistry = () => {
+        navigate('/Register');
     };
     
     return (
@@ -44,7 +49,7 @@ const Navbar = () => {
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-outline-light" type="button" onClick={navigateToLogin}>Zaloguj</button>
-                <button class=" btn btn-light" type="button">Zarejestruj</button>
+                <button class=" btn btn-light" type="button" onClick={navigateToRegistry}>Zarejestruj</button>
             </div>
             
         </nav>
