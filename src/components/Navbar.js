@@ -20,6 +20,9 @@ const Navbar = () => {
     const navigateToRegistry = () => {
         navigate('/Register');
     };
+    const navigateToAdd = () => {
+        navigate('/Add');
+    }
     
     return (
         <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-success shadow-sm">
@@ -34,7 +37,7 @@ const Navbar = () => {
                                 <Link to="/" component={App} style={{ textDecoration: 'none', color: 'white' }}>HOME</Link>
                             </a>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Dodaj film</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" onClick={navigateToAdd}>Dodaj film</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Filtruj</a></li>
                     </ul>
                 </div> 

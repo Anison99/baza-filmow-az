@@ -11,8 +11,16 @@ import Alien from './movie-images/obcy.png'
 import Stranger from './movie-images/stranger-things-3.jpg'
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
+
 
 const App = () => {
+    const navigate = useNavigate();
+
+    const navigateToDetails = () => {
+        // do zak³adki szczegó³y
+        navigate('/Details');
+    };
     
     return (
 
@@ -25,7 +33,7 @@ const App = () => {
                         <div className="movie">
                             <img src={Shrek1}></img>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <button class=" btn btn-success" type="button" >ZOBACZ</button>
+                                <button class=" btn btn-success" type="button" onClick={navigateToDetails}>ZOBACZ</button>
                             </div>
                         </div>
                     </li>
