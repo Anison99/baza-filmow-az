@@ -6,7 +6,7 @@ import App from './App';
 import Login from './components/Login';
 import Register from './components/Register';
 import Details from './movieControllers/Details';
-import NewMovie from './movieControllers/NewMovie';
+import AddMovie from './movieControllers/AddMovie';
 
 ReactDOM.render(
     <Router>
@@ -15,7 +15,7 @@ ReactDOM.render(
             <Route path='Login' element={<Login />} />
             <Route path='Register' element={<Register /> }/>
             <Route path='Details' element={<Details />} />
-            <Route path='Add' element={<NewMovie />} />
+            <Route path='Add' element={<AddMovie />} />
         </Routes>
     </Router>,
     document.getElementById("root")

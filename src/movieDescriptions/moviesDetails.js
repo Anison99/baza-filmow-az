@@ -16,7 +16,7 @@ const movieDetails = [
         type: "Horror",
         production: "Wielka Brytania, USA",
         release: "1980",
-        description:"Jack podejmuje pracê stroza odcietego od swiata hotelu Overlook. Wkrotce idylla zamienia sie w koszmar."
+        description:"Jack podejmuje prace stroza odcietego od swiata hotelu Overlook. Wkrotce idylla zamienia sie w koszmar."
     },
 
     {
@@ -38,6 +38,7 @@ const movieDetails = [
         release: "2016",
         description: "Podczas powrotu do domu znika dwunastoletni Will Byers. Zaginiecie chlopca jest poczatkiem dziwnych i niebezpiecznych wydarzen trapiacych prowincjonalne miasteczko."
     },
+    
 ];
 
 export default movieDetails;
