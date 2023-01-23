@@ -27,12 +27,14 @@ const Movie = () => {
     }
 
     return (
-        <div class="container">
+        <div class="container" style={{ marginTop: '5%' }}>
             {movies.map(movie => (
                 <div class="movie-item" key={movie.id}>
                     <h2>{movie.title}</h2>
                     <img src={movie.image} alt={movie.title} />
-                    <button onClick={() => handleClick(movie.id)}>Opis</button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" style={{ marginTop: '5%' }}>
+                        <button class=" btn btn-success" type="button" onClick={() => handleClick(movie.id)}>Opis</button>
+                    </div>
                 </div>
             ))}
             {showModal && (
