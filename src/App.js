@@ -27,6 +27,7 @@ const App = () => {
         <div className="body">
             <Navbar />
             <Banner />
+            <Movie />
             {/* 
             <div>
                 <ul class="list-group list-group-horizontal">
@@ -106,7 +107,7 @@ const App = () => {
             </div>
 
             */}
-            <Movie />
+            
         </div>   
     );
 }

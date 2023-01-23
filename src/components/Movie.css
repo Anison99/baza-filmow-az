@@ -1,0 +1,68 @@
+.modal {
+    display: none; /* domyœlnie modal jest ukryty */
+    position: absolute; /* modal jest pozycjonowany wzglêdem rodzica */
+    z-index: 99999; /* modal jest na samym wierzchu */
+    left: 0;
+    top: 0;
+    width: 100%; /* modal zajmuje ca³¹ szerokoœæ okna */
+    height: 100%; /* modal zajmuje ca³¹ wysokoœæ okna */
+    overflow: auto; /* pojawia siê scrollbar jeœli zawartoœæ jest za du¿a */
+    background-color: rgba(0,0,0,0.4); /* kolor t³a z nieprzezroczystoœci¹ */
+}
+
+
+.modal-content {
+    background-color: #fefefe; /* kolor t³a */
+    margin: 15% auto; /* odleg³oœæ od górnej i dolnej krawêdzi oraz wyœrodkowanie */
+    padding: 20px; /* odstêp od zawartoœci */
+    border: 1px solid #888; /* obramowanie */
+    width: 80%; /* szerokoœæ */
+}
+
+.close {
+    color: #aaa; /* kolor tekstu */
+    float: right; /* pozycja zamkniêcia */
+    font-size: 28px; /* rozmiar tekstu */
+    font-weight: bold; /* gruboœæ tekstu */
+}
+
+    .close:hover,
+    .close:focus {
+        color: black; /* kolor po najechaniu */
+        text-decoration: none; /* usuniêcie podkreœlenia */
+        cursor: pointer; /* zmiana kursora */
+    }
+
+.parent-of-modal {
+    position: relative;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.movie-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+    .movie-item img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        align-self: center;
+    }
+
+
+
