@@ -7,7 +7,6 @@ const Movie = () => {
     const [movies, setMovies] = useState([]);
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [showModal, setShowModal] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
 
     useEffect(() => {

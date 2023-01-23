@@ -28,6 +28,12 @@ const App = () => {
             <Navbar />
             <Banner />
             <Movie />
+            <div>
+
+                <br />
+                <h3>Przygotowanie przez Anita Zych </h3>
+                <h3>na potrzeby projektu Programowanie Reaktywne II</h3>
+            </div>
             {/* 
             <div>
                 <ul class="list-group list-group-horizontal">

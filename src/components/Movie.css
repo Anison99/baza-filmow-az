@@ -1,36 +1,36 @@
 .modal {
-    display: none; /* domyœlnie modal jest ukryty */
-    position: absolute; /* modal jest pozycjonowany wzglêdem rodzica */
-    z-index: 99999; /* modal jest na samym wierzchu */
+    display: none; 
+    position: absolute; 
+    z-index: 99999; 
     left: 0;
     top: 0;
-    width: 100%; /* modal zajmuje ca³¹ szerokoœæ okna */
-    height: 100%; /* modal zajmuje ca³¹ wysokoœæ okna */
-    overflow: auto; /* pojawia siê scrollbar jeœli zawartoœæ jest za du¿a */
-    background-color: rgba(0,0,0,0.4); /* kolor t³a z nieprzezroczystoœci¹ */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 
 .modal-content {
-    background-color: #fefefe; /* kolor t³a */
-    margin: 15% auto; /* odleg³oœæ od górnej i dolnej krawêdzi oraz wyœrodkowanie */
-    padding: 20px; /* odstêp od zawartoœci */
-    border: 1px solid #888; /* obramowanie */
-    width: 80%; /* szerokoœæ */
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 80%; 
 }
 
 .close {
-    color: #aaa; /* kolor tekstu */
-    float: right; /* pozycja zamkniêcia */
-    font-size: 28px; /* rozmiar tekstu */
-    font-weight: bold; /* gruboœæ tekstu */
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
 }
 
     .close:hover,
     .close:focus {
-        color: black; /* kolor po najechaniu */
-        text-decoration: none; /* usuniêcie podkreœlenia */
-        cursor: pointer; /* zmiana kursora */
+        color: black; 
+        text-decoration: none; 
+        cursor: pointer;
     }
 
 .parent-of-modal {
@@ -44,8 +44,6 @@
     align-items: center;
 
 }
-
-
 
 .movie-item {
     display: flex;
