@@ -4,6 +4,7 @@ import './components/Banner.css';
 
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Movie from './components/Movie';
 import moviesDetails from './movieDescriptions/moviesDetails';
 
 import Shrek1 from './movie-images/shrek-1.jpg'
@@ -26,6 +27,7 @@ const App = () => {
         <div className="body">
             <Navbar />
             <Banner />
+            {/* 
             <div>
                 <ul class="list-group list-group-horizontal">
                     <li class="list-group-item border-0">
@@ -97,10 +99,14 @@ const App = () => {
                 </ul>
             </div>
             <div>
+
                 <br/> 
                 <h3>Przygotowanie przez Anita Zych </h3>
                 <h3>na potrzeby projektu Programowanie Reaktywne II</h3>
             </div>
+
+            */}
+            <Movie />
         </div>   
     );
 }
