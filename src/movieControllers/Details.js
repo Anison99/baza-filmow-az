@@ -3,12 +3,11 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
 
-import Form from 'react-bootstrap/Form';
 import Navbar from '../components/Navbar';
-import moviesDetails from '../movieDescriptions/moviesDetails';
 
 
-import { Routes, Route, useNavigate, Link, useLocation } from "react-router-dom";
+
+import { useLocation } from "react-router-dom";
 
 
 const Details = () => {

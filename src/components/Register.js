@@ -21,9 +21,6 @@ const Register = () => {
         console.warn(item)
     }
 
-
-
-
     return (
         <div className="body">
             <Navbar />
