@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState} from 'react';
+import axios from 'axios';
 
 import './Login.css';
 import '../App.css';
@@ -9,6 +10,20 @@ import Form from 'react-bootstrap/Form';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Register = () => {
+
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+
+    function signUp() {
+        
+        let item = { name, password, email }
+        console.warn(item)
+    }
+
+
+
+
     return (
         <div className="body">
             <Navbar />
@@ -16,32 +31,25 @@ const Register = () => {
                 <div>
                     <h1>Zarejestruj</h1>
                 </div>
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicLogin">
-                        <Form.Label>Podaj login</Form.Label>
-                        <Form.Control type="login" placeholder="login" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Podaj email</Form.Label>
-                        <Form.Control type="email" placeholder="email" />
-                    </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword1">
-                        <Form.Label>Podaj haslo</Form.Label>
-                        <Form.Control type="password" placeholder="haslo" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword2">
-                        <Form.Label>Podaj ponownie haslo</Form.Label>
-                        <Form.Control type="password" placeholder="haslo" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Potwierdz wszystkie zgody" />
-                    </Form.Group>
-                    <button class=" btn btn-success" variant="primary" type="submit">Zarejestruj</button>
-                </Form>
+                <div className="col-sm-9 offset-sm-0.5">
+                    <text style={{ fontSize: '20px' }}>Login</text> 
+                    <input type="text" value={name } onChange={(e) => setName(e.target.value)} className="form-control" placeholder="podaj login"></input>
+                    < br />
+
+                    <text style={{ fontSize: '20px' }}>Haslo</text>
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" placeholder="podaj haslo"></input>
+                    < br />
+
+                    <text style={{ fontSize: '20px' }}>Email</text>
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" placeholder="podaj email"></input>
+                    < br />
+
+                    <button onClick={signUp} className=" btn btn-success">Zarejestruj</button>
+                </div>
+                
             </div>
         </div>
     );
 }
-
 export default Register;

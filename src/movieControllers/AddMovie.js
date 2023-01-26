@@ -6,133 +6,51 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import moviesDetails from '../movieDescriptions/moviesDetails';
 import Navbar from '../components/Navbar';
 
+import axios from 'axios';
+
 const AddMovie = () => {
-    const [movies, setMovies] = useState([]);
-    const [name, setName] = useState('');
+    const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
-    const [description, setDescription] = useState('');
-    const [direction, setDirection] = useState('');
-    const [scenario, setScenario] = useState('');
-    const [type, setType] = useState('');
-    const [production, setProduction] = useState('');
-    const [release, setRelease] = useState('');
+    const [content, setContent] = useState('')
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        setMovies([...movies, { name, image, description, direction, scenario, type, production, release }]);
-        setName('');
-        setDescription('');
-        setDirection('');
-        setScenario('');
-        setType('');
-        setProduction('');
-        setRelease('');
-        setImage('');
-
-        moviesDetails.push({
-            name,
-            image,
-            description,
-            direction,
-            scenario,
-            type,
-            production,
-            release
-        });
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const data = {
+            title: title,
+            image: image,
+            content: content
+        };
+        try {
+            await axios.post('https://at.usermd.net/api/movies', data);
+            // po pomyœlnym dodaniu filmu, mo¿na wyœwietliæ komunikat o sukcesie lub przekierowaæ na inn¹ stronê
+            console.log("Film zosta³ dodany.");
+        } catch (err) {
+            console.log(err);
+        }
     };
-
     return (
         <div className="body">
             <Navbar />
             <div className="form-styled">
-                <form onSubmit={handleSubmit} >
-                    <label htmlFor="name">Tyul filmu:<br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Movie name"
-                        value={name}
-                        onChange={(event) => setName(event.target.value)}
-                    />
-                    <p></p>
-
-                    <label htmlFor="image">Obraz:<br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Image URL"
-                        value={image}
-                        onChange={(event) => setImage(event.target.value)}
-                    />
-                    <p></p>
-
-                    <label htmlFor="image">Opis: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Description"
-                        value={description}
-                        onChange={(event) => setDescription(event.target.value)}
-                    />
-                    <p></p>
-
-                    <label htmlFor="image">Rezyseria: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Direction"
-                        value={direction}
-                        onChange={(event) => setDirection(event.target.value)}
-                    />
-                    <p></p>
-                    
-                    <label htmlFor="image">Scenariusz: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Scenario"
-                        value={scenario}
-                        onChange={(event) => setScenario(event.target.value)}
-                    />
-                    <p></p>
-
-                    <label htmlFor="image">Typ: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Type"
-                        value={type}
-                        onChange={(event) => setType(event.target.value)}
-                    />
-                    <p></p>
-                    <label htmlFor="image">Produkcja: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Production"
-                        value={production}
-                        onChange={(event) => setProduction(event.target.value)}
-                    />
-                    <p></p>
-                    <label htmlFor="image">Rok wydania: <br /> </label>
-                    <p></p>
-                    <input
-                        className="mb-3"
-                        type="text"
-                        placeholder="Release"
-                        value={release}
-                        onChange={(event) => setRelease(event.target.value)}
-                    />
-                    <p></p>
-                    <button class=" btn btn-success" variant="primary" type="submit">Dodaj film</button>
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        Nazwa:
+                        <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
+                    </label>
+                    <br />
+                    <label>
+                        Opis:
+                        <textarea value={content} onChange={e => setContent(e.target.value)}></textarea>
+                    </label>
+                    <br />
+                    <label>
+                        Zdjecie
+                        <input type="text" value={image} onChange={e => setImage(e.target.value)} />
+                    </label>
+                    <br />
+                    <button type="submit">Dodaj film</button>
                 </form>
+          
             </div>
         </div>
     );
