@@ -6,7 +6,7 @@ Najbardziej aktualna wersja znajduje się w gałęzi "develop"
 ## W ramach Etapu 5:
 - pobieranie listy filmów i wyświetlanie ich, wyświetlanie szczegółów o filmie ----> ZROBIONE
 - obsługa logowania i rejestracji
-- dodawanie nowych filmów do bazy 
+- dodawanie nowych filmów do bazy ----> ZROBIONE
 - usuwanie filmów
 
 
