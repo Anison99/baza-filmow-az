@@ -33,15 +33,15 @@ const Register = () => {
                 </div>
 
                 <div className="col-sm-9 offset-sm-0.5">
-                    <text style={{ fontSize: '20px' }}>Login</text> 
+                    <text style={{ fontSize: '15px' }}>Login</text> 
                     <input type="text" value={name } onChange={(e) => setName(e.target.value)} className="form-control" placeholder="podaj login"></input>
                     < br />
 
-                    <text style={{ fontSize: '20px' }}>Haslo</text>
+                    <text style={{ fontSize: '15px' }}>Haslo</text>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" placeholder="podaj haslo"></input>
                     < br />
 
-                    <text style={{ fontSize: '20px' }}>Email</text>
+                    <text style={{ fontSize: '15px' }}>Email</text>
                     <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" placeholder="podaj email"></input>
                     < br />
 
