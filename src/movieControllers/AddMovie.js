@@ -37,17 +37,19 @@ const AddMovie = () => {
                 <form onSubmit={handleSubmit}>
                     <label>
                         Nazwa:
-                            <input type="text" value={title} onChange={e => setTitle(e.target.value)} className="form-control" />
+                            <input type="text" placeholder="podaj nazwe" value={title} onChange={e => setTitle(e.target.value)} className="form-control" />
                     </label>
-                    <br />
+                        <br />
+                        <br />
                     <label>
                         Opis:
-                            <input value={content} onChange={e => setContent(e.target.value)} className="form-control"></input>
+                            <input type="text" placeholder="podaj opis" value={content} onChange={e => setContent(e.target.value)} className="form-control"></input>
                     </label>
-                    <br />
+                        <br />
+                        <br />
                     <label>
                         Zdjecie (link)
-                            <input type="text" value={image} onChange={e => setImage(e.target.value)} className="form-control" />
+                            <input type="text" placeholder="dodaj link" value={image} onChange={e => setImage(e.target.value)} className="form-control" />
                     </label>
                         <br />
                         <br />

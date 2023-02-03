@@ -35,7 +35,11 @@ const Movie = () => {
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center" style={{ marginTop: '5%' }}>
                         <button class=" btn btn-success" type="button" onClick={() => handleClick(movie.id)}>Opis</button>
                     </div>
+                    <div>
+                        </div>
+
                 </div>
+
             ))}
             {showModal && (
                 <div className=".modal">
